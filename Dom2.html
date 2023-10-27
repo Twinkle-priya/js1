@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WALKING THE DOM</title>
+</head>
+<body>
+    <!--  x
+    Dpm tree refers to the HTMl page where all the nodes are objects . These can be 3 main types.
+    1).TEXT NODE 
+    2). ELEMENT nodes
+    3). COMMENT NODE.
+    In an HTML page ,<html> is at the root and <head> and <body> are its children ,etc.
+
+       **  A text node is always a leaf of the tree.
+       Auto Correction 
+       If an erroneous HtMl is encountered by the browser it tends to correct it for example , if we put something after the body , it is automaatically moved inside the body . 
+       Another example is <table> tag which must contain <tbody>.
+
+       ------------>>
+      Hello World
+      <span>This Is Me</span>
+      <!-- <html>  
+      <head>
+    <title> Hello </title>
+      </head>
+      <body>
+    
+    </html>
+    -->
+    <script>
+        alert("From Head:" + document.body);
+        alert( "From Body : " + document.body); 
+
+        //  Children : ChildNodes , FirstChild, lastchild
+        /*
+        There are two terms that we will use from now on 
+     1). Child notes (or Children) ---  Elemnts that are direct children. In other words, they are nested exactly in the given one. For instead.
+     <head> and <body> are children of <html> element.
+     2). Desecendants --- all elements that are nested in the given one . including children their children and so on .
+     For instance . here <body> has children <div> and <ul> and 
+        (few blank text nodes).
+        and desecendants of <body> are not only direct children <div>.<ul> but also more deeply nested elements such as <li> (a child of <ul>)and <b> (a child of <li>)- the entire subtree.
+            The childNotes collection lists all child nodes , including text nodes. 
+
+        */
+    </script>
+    
+</body>
+</html>
